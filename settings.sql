@@ -1,0 +1,4 @@
+-- settings.sql
+CREATE DATABASE nycapp;
+CREATE USER nyc1user WITH PASSWORD 'nyc';
+GRANT ALL PRIVILEGES ON DATABASE nyc TO nyc1user;

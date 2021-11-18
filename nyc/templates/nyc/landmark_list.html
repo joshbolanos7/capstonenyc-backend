@@ -1,0 +1,9 @@
+<!-- tunr/templates/tunr/artist_list.html -->
+<h2>Landmarks <a href="">(+)</a></h2>
+<ul>
+  {% for landmark in landmarks %}
+  <li>
+    <a href="{% url 'landmark_detail' pk=landmark.pk %}">{{ landmark.name }}</a>
+  </li>
+  {% endfor %}
+</ul>

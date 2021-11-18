@@ -1,0 +1,13 @@
+<h2>{{ landmark.name }} <a href="">(edit)</a></h2>
+<h4>{{ landmark.type }}</h4>
+
+<img src="{{ landmark.photo_url }}" alt="" class="landmark-photo" />
+
+<h3> NYC App <a href="">(+)</a></h3>
+<ul>
+    {% for landmark in landmark.all %}
+  <li>
+    <a href="">{{ landmark.address }}-{{ landmark.description }}</a>
+  </li>
+  {% endfor %}
+</ul>

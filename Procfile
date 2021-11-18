@@ -1,0 +1,1 @@
+web: gunicorn nycapp_django.wsgi
